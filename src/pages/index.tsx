@@ -52,7 +52,7 @@ export default function Home() {
         <Input number={3} correctValue="swift" update={updateClaimable} placeholder="*****" />
         <Input number={4} correctValue="endorse" update={updateClaimable} placeholder="*******" />
         <Input number={5} correctValue="loading" update={updateClaimable} placeholder="*******" />
-        <Input number={6} correctValue="canyon" update={updateClaimable} placeholder="******" />
+        <Input number={6} correctValue="treasure" update={updateClaimable} placeholder="********" />
         <Input number={7} correctValue="title" update={updateClaimable} placeholder="*****" />
         <Input number={8} correctValue="few" update={updateClaimable} placeholder="***" />
         <Input number={9} correctValue="ribbon" update={updateClaimable} placeholder="******" />

@@ -10,7 +10,7 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ number, correctValue, placeholder,update}) => {
   const [input, setInput] = useState("");
   useEffect(() => {
-    if(input === correctValue){
+    if(input?.toLowerCase() === correctValue){
       update(number , true);
     }else{
       update(number , false);
@@ -18,7 +18,7 @@ const Input: React.FC<InputProps> = ({ number, correctValue, placeholder,update}
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input])
   return (
-    <div className={`border ${input ? input === correctValue ? "border-zo-green" : "border-red-500" : "border-zo-stroke" } bg-zo-stroke p-2 text-zo-primary flex items-center gap-2 justify-start w-ful`}>
+    <div className={`border ${input ? input.toLowerCase() === correctValue ? "border-zo-green" : "border-red-500" : "border-zo-stroke" } bg-zo-stroke p-2 text-zo-primary flex items-center gap-2 justify-start w-ful`}>
       <span>{number}</span>
       <input
         type="text"
